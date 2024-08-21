@@ -1,0 +1,283 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 6 ]
+"6 C:\Users\mfb36\Desktop/sonsonson.X/support c files/lcd.c
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+"28
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+"36
+[v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
+"41
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+"58
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+"76
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+"91
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+"32 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"492 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"56 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"31 C:\Users\mfb36\Desktop\son.X\newmain.c
+[v _main main `(i  1 e 2 0 ]
+"62
+[v _Trigger_Ultrasonic Trigger_Ultrasonic `(v  1 e 1 0 ]
+"68
+[v _Get_Distance Get_Distance `(i  1 e 2 0 ]
+"83
+[v _Update_LEDs Update_LEDs `(v  1 e 1 0 ]
+"115
+[v _Update_Buzzer Update_Buzzer `(v  1 e 1 0 ]
+"207 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"268
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"329
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"617
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+"635
+[v _T1CON T1CON `VEuc  1 e 1 @16 ]
+"1335
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1396
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1457
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2511
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
+"2513
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2531
+[v _RC0 RC0 `VEb  1 e 0 @56 ]
+"2533
+[v _RC1 RC1 `VEb  1 e 0 @57 ]
+"2535
+[v _RC2 RC2 `VEb  1 e 0 @58 ]
+"2537
+[v _RC3 RC3 `VEb  1 e 0 @59 ]
+"2539
+[v _RC4 RC4 `VEb  1 e 0 @60 ]
+"2561
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2565
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2567
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"2569
+[v _RD4 RD4 `VEb  1 e 0 @68 ]
+"2571
+[v _RD5 RD5 `VEb  1 e 0 @69 ]
+"2573
+[v _RD6 RD6 `VEb  1 e 0 @70 ]
+"354 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+[v _dpowers dpowers `DCC[5]ui  1 s 10 dpowers ]
+"31 C:\Users\mfb36\Desktop\son.X\newmain.c
+[v _main main `(i  1 e 2 0 ]
+{
+"42
+[v main@distanceStr distanceStr `[16]uc  1 a 16 40 ]
+"41
+[v main@distance distance `i  1 a 2 56 ]
+"60
+} 0
+"492 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"528
+[v sprintf@val val `ui  1 a 2 9 ]
+"499
+[v sprintf@c c `c  1 a 1 12 ]
+"506
+[v sprintf@prec prec `c  1 a 1 8 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 7 ]
+"494
+[v sprintf@ap ap `[1]*.4v  1 a 1 6 ]
+"492
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCCuc  1 p 1 0 ]
+"533
+[v sprintf@sp sp `*.4uc  1 a 1 11 ]
+"1541
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"31
+} 0
+"83 C:\Users\mfb36\Desktop\son.X\newmain.c
+[v _Update_LEDs Update_LEDs `(v  1 e 1 0 ]
+{
+[v Update_LEDs@distance distance `i  1 p 2 0 ]
+"113
+} 0
+"115
+[v _Update_Buzzer Update_Buzzer `(v  1 e 1 0 ]
+{
+"116
+[v Update_Buzzer@i i `i  1 a 2 4 ]
+"115
+[v Update_Buzzer@distance distance `i  1 p 2 0 ]
+"148
+} 0
+"62
+[v _Trigger_Ultrasonic Trigger_Ultrasonic `(v  1 e 1 0 ]
+{
+"66
+} 0
+"91 C:\Users\mfb36\Desktop/sonsonson.X/support c files/lcd.c
+[v _Lcd_Write_String Lcd_Write_String `(v  1 e 1 0 ]
+{
+[v Lcd_Write_String@a a `*.4uc  1 a 1 wreg ]
+"92
+[v Lcd_Write_String@i i `i  1 a 2 6 ]
+"91
+[v Lcd_Write_String@a a `*.4uc  1 a 1 wreg ]
+"93
+[v Lcd_Write_String@a a `*.4uc  1 a 1 8 ]
+"95
+} 0
+"76
+[v _Lcd_Write_Char Lcd_Write_Char `(v  1 e 1 0 ]
+{
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"77
+[v Lcd_Write_Char@y y `uc  1 a 1 3 ]
+[v Lcd_Write_Char@temp temp `uc  1 a 1 2 ]
+"76
+[v Lcd_Write_Char@a a `uc  1 a 1 wreg ]
+"78
+[v Lcd_Write_Char@a a `uc  1 a 1 4 ]
+"89
+} 0
+"41
+[v _Lcd_Set_Cursor Lcd_Set_Cursor `(v  1 e 1 0 ]
+{
+[v Lcd_Set_Cursor@row row `uc  1 a 1 wreg ]
+"42
+[v Lcd_Set_Cursor@temp temp `uc  1 a 1 10 ]
+[v Lcd_Set_Cursor@y y `uc  1 a 1 9 ]
+[v Lcd_Set_Cursor@z z `uc  1 a 1 8 ]
+"41
+[v Lcd_Set_Cursor@row row `uc  1 a 1 wreg ]
+[v Lcd_Set_Cursor@col col `uc  1 p 1 4 ]
+"43
+[v Lcd_Set_Cursor@row row `uc  1 a 1 7 ]
+"56
+} 0
+"58
+[v _Lcd_Init Lcd_Init `(v  1 e 1 0 ]
+{
+"74
+} 0
+"36
+[v _Lcd_Clear Lcd_Clear `(v  1 e 1 0 ]
+{
+"39
+} 0
+"28
+[v _Lcd_Cmd Lcd_Cmd `(v  1 e 1 0 ]
+{
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+[v Lcd_Cmd@a a `uc  1 a 1 wreg ]
+[v Lcd_Cmd@a a `uc  1 a 1 3 ]
+"34
+} 0
+"6
+[v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
+{
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+[v Lcd_Port@a a `uc  1 a 1 wreg ]
+[v Lcd_Port@a a `uc  1 a 1 0 ]
+"26
+} 0
+"68 C:\Users\mfb36\Desktop\son.X\newmain.c
+[v _Get_Distance Get_Distance `(i  1 e 2 0 ]
+{
+"70
+[v Get_Distance@distance distance `i  1 a 2 35 ]
+"69
+[v Get_Distance@timeElapsed timeElapsed `i  1 a 2 33 ]
+"81
+} 0
+"44 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 25 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 29 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 24 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 16 ]
+"73
+} 0
+"56 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 11 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 15 ]
+[v ___ftdiv@exp exp `uc  1 a 1 14 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 10 ]
+"56
+[v ___ftdiv@f2 f2 `f  1 p 3 0 ]
+[v ___ftdiv@f1 f1 `f  1 p 3 3 ]
+"86
+} 0
+"32 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 13 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
